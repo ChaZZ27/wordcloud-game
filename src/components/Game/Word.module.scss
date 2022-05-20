@@ -1,0 +1,57 @@
+.word {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 0;
+    height: 100%;
+    position: relative;
+    .tooltip {
+        position: absolute;
+        top: -5px;
+        width: 100%;
+        color: white;
+    }
+    button {
+        padding: 10px;
+        margin: 0;
+        border: 1px solid transparent;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000;
+        cursor: pointer;
+        transition: color .1s ease;
+        &:hover {
+            background-color: transparent;
+            color: #000;
+        }
+    }
+    &[data-selected="true"] {
+        button {
+            border: 1px solid #000;
+        }
+    }
+    &[data-iscorrect="false"][data-selected="true"] {
+        .tooltip {
+            outline: 2px solid red;
+            background-color: red;
+        }
+        button {
+            color: red;
+            border-color: red;
+            outline: 2px solid red;
+        }
+    }
+    &[data-iscorrect="true"][data-selected="true"] {
+        .tooltip {
+            outline: 2px solid green;
+            background-color: green;
+        }
+        button {
+            color: green;
+            border-color: green;
+            outline: 2px solid green;
+        }
+    }
+}

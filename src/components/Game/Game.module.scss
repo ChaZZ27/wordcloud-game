@@ -1,0 +1,35 @@
+@import '../Helpers/Animations.module.scss';
+
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fadein 1.5s;
+    padding: 2rem 0;
+
+    h2 {
+        text-transform: uppercase;
+    }
+    .words-box {
+        border: 1px solid #aeaeae;
+        border-radius: 4px;
+        padding: 2rem;
+        max-width: 1080px;
+        width: 100%;
+        .words-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    button {
+        margin-top: 2rem;
+        max-width: 120px;
+    }
+}
+

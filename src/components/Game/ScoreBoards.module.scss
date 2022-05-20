@@ -1,0 +1,13 @@
+@import '../Helpers/Animations.module.scss';
+
+.score-board {
+    text-align: center;
+    animation: fadein 1.5s;
+    padding: 2rem 0;
+    h1 {
+        margin: 0 0 2rem 0;
+    }
+    button {
+        max-width: 120px;
+    }
+}
